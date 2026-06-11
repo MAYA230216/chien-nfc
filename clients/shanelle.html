@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chien perdu - Contactez sa famille</title>
+<style>
+body{
+  font-family:Arial,sans-serif;
+  max-width:600px;
+  margin:auto;
+  padding:20px;
+  text-align:center;
+  background:#f5f5f5;
+}
+.card{
+  background:white;
+  padding:20px;
+  border-radius:15px;
+  box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+img{
+  width:220px;
+  border-radius:12px;
+}
+.button{
+  display:block;
+  padding:15px;
+  margin:10px 0;
+  background:#2e7d32;
+  color:white;
+  text-decoration:none;
+  border-radius:10px;
+  font-size:18px;
+}
+</style>
+</head>
+<body>
+<div class="card">
+  <h1>💖 Je suis une petite princesse perdue, merci de contacter ma famille.</h1>
+  <img src="../photos/shanelle.jpg" alt="Photo du chien">
+  <h2>Shanelle</h2>
+  <p>Merci de contacter mon propriétaire.</p>
+  <a class="button" href="tel:+33687777940">📞 Appeler</a>
+  <a class="button" href="sms:+33687777940">📱 Envoyer un SMS</a>
+  <a class="button" id="gpsBtn" href="#">📍 Envoyer ma position</a>
+  <p>🤭 Je promets que ce n'était pas une fugue préméditée.</p>
+</div>
+<script>
+document.getElementById('gpsBtn').onclick=function(){
+  navigator.geolocation.getCurrentPosition(function(pos){
+    let lat=pos.coords.latitude;
+    let lon=pos.coords.longitude;
+    let msg="Bonjour, j'ai trouvé votre chien. Ma position : https://maps.google.com/?q="+lat+","+lon;
+    window.location.href="sms:+33687777940?body="+encodeURIComponent(msg);
+  });
+};
+</script>
+</body>
+</html>
