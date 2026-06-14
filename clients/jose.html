@@ -1,27 +1,96 @@
+```html
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Espagne</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Hola José</title>
+
+<style>
+body{
+    font-family: Georgia, serif;
+    background:#fafafa;
+    text-align:center;
+    margin:0;
+    padding:20px;
+    color:#222;
+}
+
+h1{
+    color:#d81b60;
+    font-size:3em;
+    margin-bottom:10px;
+}
+
+h2{
+    color:#1a237e;
+    font-size:2em;
+    margin:10px 0;
+}
+
+.photo{
+    max-width:90%;
+    width:800px;
+    border-radius:20px;
+    box-shadow:0 4px 15px rgba(0,0,0,.25);
+    margin:25px auto;
+}
+
+.texte{
+    font-size:1.5em;
+    margin:30px auto;
+    max-width:900px;
+}
+
+.bouton{
+    display:inline-block;
+    margin-top:25px;
+    background:#ff0000;
+    color:white;
+    text-decoration:none;
+    padding:18px 35px;
+    border-radius:15px;
+    font-size:1.5em;
+    font-weight:bold;
+}
+
+.bouton:hover{
+    transform:scale(1.03);
+}
+
+.signature{
+    margin-top:25px;
+    color:#777;
+    font-style:italic;
+}
+</style>
 </head>
+
 <body>
 
-<h1>Hola José 😘❤️<br>
-Besos de Francia 🇫🇷💋<br>
-Te quiero mucho ❤️💕😘</h1>
+<h1>Hola José 😘❤️</h1>
 
-<img src="../photos/jose.jpg" width="500">
+<h2>Besos de Francia 💋</h2>
 
-<p>
-La Marcha Real est l'hymne national de l'Espagne.
-</p>
+<h2>Te quiero mucho ❤️💕😘</h2>
 
-<iframe
-    width="560"
-    height="315"
-    src="https://www.youtube.com/watch?v=NfySIFcWSfI"
-    allowfullscreen>
-</iframe>
+<img class="photo" src="../photos/jose.jpg" alt="José">
+
+<div class="texte">
+    🇪🇸 La Marcha Real est l'hymne national de l'Espagne 🇪🇸
+</div>
+
+<a class="bouton"
+   href="https://www.youtube.com/watch?v=NfySIFcWSfI"
+   target="_blank">
+   ▶ Escuchar el Himno de España 🇪🇸
+</a>
+
+<div class="signature">
+    Con cariño ❤️
+</div>
 
 </body>
 </html>
+```
