@@ -41,8 +41,8 @@ img{
   <img src="../photos/maya.jpg" alt="Photo du chien">
   <h2>Maya</h2>
   <p>Merci de contacter mon propriétaire.</p>
-  <a class="button" href="tel:+33624474186">📞 Appeler</a>
-  <a class="button" href="sms:+33624474186">📱 Envoyer un SMS</a>
+  <a class="button" href="tel:+33617477379">📞 Appeler</a>
+  <a class="button" href="sms:+33617477379">📱 Envoyer un SMS</a>
   <a class="button" id="gpsBtn" href="#">📍 Envoyer ma position</a>
   <p>INFOS_SANTE</p>
 </div>
@@ -52,7 +52,7 @@ document.getElementById('gpsBtn').onclick=function(){
     let lat=pos.coords.latitude;
     let lon=pos.coords.longitude;
     let msg="Bonjour, j'ai trouvé votre chien. Ma position : https://maps.google.com/?q="+lat+","+lon;
-    window.location.href="sms:+33624474186?body="+encodeURIComponent(msg);
+    window.location.href="sms:+33617477379?body="+encodeURIComponent(msg);
   });
 };
 </script>
